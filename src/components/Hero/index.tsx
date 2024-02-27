@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import SectionTitle from "../Common/SectionTitle";
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -10,6 +11,15 @@ const Hero = () => {
     setScrollY(window.scrollY);
   };
 
+
+  const summary={
+    para:(<p>
+      هناك مشكلة يمكن أن تواجهنا فى المستقبل وهى إنتهاء الكهرباء من العالم ، وذلك بسبب أن محطات توليد الكهرباء تعمل بالوقود ( النفط ) وهو طاقة غير متجددة وغير نظيفة ، ولكى نحل هذه المشكلة لابد من استخدام طاقة نظيفة ومتجددة مثل طاقة الشمس لتوليد الكهرباء وهذا مايعرف ب(الخلايا الشمسية ).والأساس العلمى لذلك هى ظاهرة فيزيائية تحدث تسمى ( ظاهرة التأثير الكهروضوئى ).
+وعليه سوف نتكلم فى الفيديوباستخدام الذكاء الإصطناعى ، عن كيفية حدوث هذه الظاهرة  وإقتراحات علماء الفيزياء فيها ، وما المشكلات التى تواجهها وكيفية التغلب عليها والإستفادة منها لكى تكون أساس توليد الكهرباء فى المستقبل .
+كذلك سوف نرفق المحتوى العلمى بباركود من خلاله نتعرف على الظاهرة بخريطة ذهنية بسيطة  وعمل فيديو لتجربة بسيطة عنها .
+
+    </p>)
+  }
   const handleButtonClick = (audioFile) => {
     const audio = new Audio(`${audioFile}.mp3`);
     audio.play();
@@ -79,89 +89,29 @@ const Hero = () => {
                   ></div>
                   <div className="absolute inset-0 flex flex-col items-center justify-center rounded-md p-8">
                     <h1 className="mb-8 text-3xl font-bold leading-tight text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight mb-4">
-                      التداخل الهدام والقضاء علي الضوضاء
-                    </h1>
+                      كهرباء المستقبل النظيفة                    </h1>
                     <div className="flex flex-row">
                       <div className="flex flex-col text-white">
                         <div
-                          className="bg-gray-700 bg-opacity-75 rounded-md p-2 text-white text-center mb-2 cursor-pointer hover:bg-gray-800 transition duration-300 flex items-center justify-center"
-                          onClick={() => handleButtonClick("al jazy saleh")}
+                          className="bg-gray-700 bg-opacity-75 rounded-md p-2 text-white text-center mb-2  hover:bg-gray-800 transition duration-300 flex items-center justify-center"
                         >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="40"
-                            height="40"
-                            fill="currentColor"
-                            className="bi bi-play"
-                            viewBox="0 0 16 16"
-                          >
-                            <path
-                              d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
-                            />
-                          </svg>
-                          <p className="text-md font-semibold">الجازي صالح</p>
+                          
+                          <p className="text-md font-semibold">شيخة البرجس </p>
                         </div>
                         <div
-                          className="bg-gray-700 bg-opacity-75 rounded-md p-2 text-white text-center mb-2 cursor-pointer hover:bg-gray-800 transition duration-300 flex items-center justify-center"
-                          onClick={() => handleButtonClick("8la 7assan")}
+                          className="bg-gray-700 bg-opacity-75 rounded-md p-2 text-white text-center mb-2  hover:bg-gray-800 transition duration-300 flex items-center justify-center"
                         >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="40"
-                            height="40"
-                            fill="currentColor"
-                            className="bi bi-play"
-                            viewBox="0 0 16 16"
-                          >
-                            <path
-                              d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
-                            />
-                          </svg>
-                          <p className="text-md font-semibold">غلا حسن</p>
+                          
+                          <p className="text-md font-semibold">زينة الفهد </p>
                         </div>
-                        <div
-                          className="bg-gray-700 bg-opacity-75 rounded-md p-2 text-white text-center mb-2 cursor-pointer hover:bg-gray-800 transition duration-300 flex items-center justify-center"
-                          onClick={() => handleButtonClick("zeina abdelaziz")}
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="40"
-                            height="40"
-                            fill="currentColor"
-                            className="bi bi-play"
-                            viewBox="0 0 16 16"
-                          >
-                            <path
-                              d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
-                            />
-                          </svg>
-                          <p className="text-md font-semibold">زينة عبدالعزيز</p>
-                        </div>
-                        <div
-                          className="bg-gray-700 bg-opacity-75 rounded-md p-2 text-white text-center mb-2 cursor-pointer hover:bg-gray-800 transition duration-300 flex items-center justify-center"
-                          onClick={() => handleButtonClick("rafeef el 3nzy")}
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="40"
-                            height="40"
-                            fill="currentColor"
-                            className="bi bi-play"
-                            viewBox="0 0 16 16"
-                          >
-                            <path
-                              d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
-                            />
-                          </svg>
-                          <p className="text-md font-semibold">رفيف الغنزي</p>
-                        </div>
+
                       </div>
 
                       <div className="ml-2 border-2 border-gray-700 bg-opacity-75 rounded-md p-2 text-white text-center mb-2 flex justify-between items-center">
                         <p className="text-md font-bold">إعداد الطالبات</p>
                       </div>
                     </div>
-                    <div className="flex flex-row">
+                    {/* <div className="flex flex-row">
                       <div className="flex flex-col text-white">
                         <div
                           className="bg-gray-700 bg-opacity-75 rounded-md p-2 text-white text-center mb-2 hover:bg-gray-800 transition duration-300 flex items-center justify-center"
@@ -199,7 +149,14 @@ const Hero = () => {
                       <div className="ml-2 border-2 border-gray-700 bg-opacity-75 rounded-md p-2 text-white text-center flex justify-between items-center">
                         <p className="text-md font-bold">مديرة المدرسة </p>
                       </div>
-                    </div>
+                    </div> */}
+                    <SectionTitle
+                      title=""
+                      paragraph={summary.para.props.children}
+                      center
+                      mb="40px"
+                      white />
+
                   </div>
 
                 </div>

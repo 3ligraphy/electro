@@ -28,16 +28,10 @@ const Video = () => {
     researchTopic:
       (
         <p>
-          اصبحت الحياة الحديثة أكثر انشغالا وضوضاء في السنوات الأخير يؤدي التلوث الضوضائيNoise Pollution)) إلى العديد من الآثار الضارة على صحة الإنسان، وأهمها ضعف السمع والإصابة بأمراض القلب والتعرض لاضطرابات النوم وأيضا الأضرار النفسية والشعور المستمر بالإجهاد. (2)
-          التداخل هو السمة المميزة للموجات، وكلها تظهر تداخلا بناء وهداما مشابها تماما لتلك التي تظهر لموجات الماء ، الصوت كونه موجة ، نتوقع أن يظهر تداخلا بناء وهدام ايضا.
-          يعد التفكير في تطبيقات واسعة النطاق للحد من الضوضاء النشطة عن طريق التداخل المدمر(الهدام) استخداما ذكيا للتداخل الصوتي لإلغاء الضوضاء.. (3)
-          ولقد نفذ العلماء سلسله من البحوث والاعمال المبتكرة التي تهدف لتطور تقنية إلغاء الضوضاء على مر السنين..
-
-        </p>
-      ),
+          العامل الأساسى فى إنبعاث الإلكترونات هو تردد الضوء أى (طاقة الفوتون) وليس شدة الضوء أى عدد الفوتونات. وعليه فإن: إن أقل مقدار للطاقة اللازمة لتحرير الإلكترون تسمى ( دالة الشغل) يسمى (تردد العتبة) 𝒇_𝟎 حيث  Ф = h 𝒇_𝟎 وتعطى من العلاقة.
+        </p>),
 
     interferenceApplication: "        التداخل هو السمة المميزة للموجات، وكلها تظهر تداخلا بناء وهداما مشابها تماما لتلك التي تظهر لموجات الماء. الصوت كونه موجة، نتوقع أن يظهر تداخلا بناء وهداما أيضا. يعد التفكير في تطبيقات واسعة النطاق للحد من الضوضاء النشطة عن طريق التداخل المدمر (الهدام) استخداما ذكيا للتداخل الصوتي لإلغاء الضوضاء.    "
-
 
     ,
     noiseCancellationResearch: (
@@ -343,324 +337,168 @@ const Video = () => {
 
 
   // Truncate the content for initial display
-  const truncatedContent = `    نحن نعيش حياتنا كلها محاطة بها. إنها تصطدم بنا باستمرار بسرعة تزيد عن 700 ميل في الساعة، وأحيانا تؤلمنا، وأحيانا تهدئنا. لديها القدرة على توصيل الأفكار، وحتى أنها تسبب أضرارا جسدية.  وبالفعل هي جزء كبير من حياتنا اليومية. إنها الموجات الصوتية. إذن، ما هي الموجات الصوتية وكيف تعمل؟ وما اضرارها؟     , ${researchContent.divineReference.props.children}`;
+  const truncatedContent = "السلام عليكم العالم من حولنا لا يستطيع من دون كهرباء ، ويمكن فى المستقبل أن تنتهى لأن الطاقة التى تستخدم فى توليد الكهرباء هى ( الوقود ) وهى طاقة غير متجددة وغير نظيفة .وحل هذه المشكلة توجد فى ظاهرة فيزيائية تسمى ( ظاهرة التأثير الكهروضوئى ) وهى ظاهرة إنبعاث الإلكترونات من سطح  فلز حساس للضوء عند سقوط ضوء ذات تردد مناسب عليه .وتسمى الإلكترونات المنبعثة بالإلكترونات الضوئية .اكتشف العلماء أنه عند سقوط ضوء فوق بنفسجى ( طاقته عالية ) على لوح معدنى يسمى (الكاثود ) فإنه ينبعث منه إلكترونات تجاه لوح آخر مقابل له يسمى( الآنود ) فيتولد تيار كهربائى يمكن قياسه بواسطة ( ميكروأميتر)"
 
 
 
   return (
     <AnimatePresence>
 
-    <motion.div
-      initial={{ opacity: 0, x: -100 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ delay: 0.5 }}
-    >
-      <section className="relative z-10 py-16 md:py-20 lg:py-28">
-        <div className="container flex flex-wrap items-center">
-          {/* Left Column */}
-          <div className="w-full md:w-1/2 px-4 mb-4 md:mb-0">
-            <div
-              className="mx-auto max-w-[770px] overflow-hidden rounded-md relative"
-              data-wow-delay=".15s"
-              style={{
-                height: showFullContent ? 'auto' : '400px', // Adjusted height
-                overflow: 'hidden',
-              }}
-            >
-              <div className="aspect-[77/40] items-center justify-center">
-                <Image src="/COVER.jpg" alt="video image" fill />
-                <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">
-                  <button
-                    aria-label="video play button"
-                    onClick={() => setOpen(true)}
-                    className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-white bg-opacity-75 text-primary transition hover:bg-opacity-100"
-                  >
-                    <svg
-                      width="16"
-                      height="18"
-                      viewBox="0 0 16 18"
-                      className="fill-current"
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.5 }}
+      >
+        <section className="relative z-10 py-16 md:py-20 lg:py-28">
+          <div className="container flex flex-wrap items-center">
+            {/* Left Column */}
+            <div className="w-full md:w-1/2 px-4 mb-4 md:mb-0">
+              <div
+                className="mx-auto max-w-[770px] overflow-hidden rounded-md relative"
+                data-wow-delay=".15s"
+                style={{
+                  height: showFullContent ? 'auto' : '400px', // Adjusted height
+                  overflow: 'hidden',
+                }}
+              >
+                <div className="aspect-[77/40] items-center justify-center">
+                  <Image src="/COVER.jpg" alt="video image" fill />
+                  <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">
+                    <button
+                      aria-label="video play button"
+                      onClick={() => setOpen(true)}
+                      className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-white bg-opacity-75 text-primary transition hover:bg-opacity-100"
                     >
-                      <path d="M15.5 8.13397C16.1667 8.51888 16.1667 9.48112 15.5 9.86602L2 17.6603C1.33333 18.0452 0.499999 17.564 0.499999 16.7942L0.5 1.20577C0.5 0.43597 1.33333 -0.0451549 2 0.339745L15.5 8.13397Z" />
-                    </svg>
-                  </button>
+                      <svg
+                        width="16"
+                        height="18"
+                        viewBox="0 0 16 18"
+                        className="fill-current"
+                      >
+                        <path d="M15.5 8.13397C16.1667 8.51888 16.1667 9.48112 15.5 9.86602L2 17.6603C1.33333 18.0452 0.499999 17.564 0.499999 16.7942L0.5 1.20577C0.5 0.43597 1.33333 -0.0451549 2 0.339745L15.5 8.13397Z" />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
+              </div>
+            </div>
+
+            {/* Right Column */}
+            <div className="w-full md:w-1/2 px-4">
+              <div className="text-right">
+                {showFullContent ? (
+                  <div>
+                    <SectionTitle
+                      title="المقدمة"
+                      paragraph={truncatedContent}
+                      center
+                      mb="80px"
+                    />
+                    <SectionTitle
+                      title="تفسير إينشتاين لهذه الظاهرة:"
+                      paragraph={""}
+                      center
+                      mb="80px"
+                      sub
+                      img="/eng1.png"
+                    />
+                    <SectionTitle
+                      title="لوحظ ان"
+                      paragraph={""}
+                      center
+                      mb="80px"
+                      sub
+                      img="/eng2.png"
+                    />
+                    <SectionTitle
+                      title="من التطبيقات العملية لظاهرة التاثير الكهروضوئي"
+                      paragraph={""}
+                      center
+                      mb="80px"
+
+                    />
+                    <SectionTitle
+                      title="الخلايا الشمسية"
+                      paragraph={"وهى عبارة عن ألواح معدنية حساسة للضوء مثل معدن السليكون حيث يتم تعريضها لأشعة الشمس فتتحرر الإلكترونات من سطحها وتمر فى كابلات ضخمة لتوليد الكهرباء .تستخدم الألواح الشمسية حاليا فى بعض المدن الذكية حول العالم حيث تتولد الكهرباء من الألواح الشمسية الموجودة على أسطح المنازل الذكية  "}
+                      center
+                      mb="80px"
+                      sub
+                    />
+                    <SectionTitle
+                      title="أجهزة الاستشعار الضوئي"
+                      paragraph={"يمكن استخدام ظاهرة التأثير الكهروضوئي في تصميم أجهزة الاستشعار الضوئي التي تحول الضوء إلى إشارات كهربائية، وتستخدم في تطبيقات مثل التصوير الفوتوغرافي الرقمي والأمن والمراقبة. "}
+                      center
+                      mb="40px"
+                      sub />
+
+                    <SectionTitle
+                      title="الإنترنت عبر الضوء"
+                      paragraph={"فى عام 2011 تم اكتشاف مذهل وهو استخدلم الإنترنت من خلال موجات الراديو وذلك بواسطة صمام ثنائى باعث للضوء .، حيث يمكن استخدام الإنترنت فى أجهزة الكمبيوتر والهواتف الذكية من خلال موجات الضوء وهى تقنية تسمى (لاى فاى)."}
+                      center
+                      mb="40px"
+                      sub />
+                    <SectionTitle
+                      title="المشكلات التى تواجة هذه الظاهرة والحلول"
+                      paragraph={""}
+                      center
+                      mb="40px" />
+
+                    <SectionTitle
+                      title="الظروف البيئية"
+                      paragraph={" يمكن أن تتأثر أداء أجهزة التحويل الضوئي بالعوامل البيئية مثل التغيرات في درجة الحرارة وشدة الإضاءة والرطوبة . فيتطلب هذا التحدى تطوير مواد ذات نوعية جيدة وتصميم أجهزة مستقرة تحت مختلف الظروف. "}
+                      center
+                      mb="40px"
+                      sub
+                    />
+
+                    <SectionTitle
+                      title="تكاليف الإنتاج"
+                      paragraph={"يمكن أن تكون تقنيات التحويل الضوئي مكلفة في الإنتاج، سواء بسبب تكلفة المواد أو تكلفة عمليات التصنيع المعقدة. فتقليل التكاليف يمكن أن يجعل هذه التقنيات أكثر تنافسية من الناحية التجارية."}
+                      center
+                      mb="40px"
+                      sub />
+                    <SectionTitle
+                      title="الخرائط الذهنية"
+                      paragraph={""}
+                      center
+                      mb="40px" 
+                      img="/map.png"/>
+                   
+                  </div>
+                ) :
+                  (
+                    <SectionTitle
+                      title="المقدمة"
+                      paragraph={truncatedContent}
+                      center
+                      mb="80px"
+                    />
+                  )
+                }
+
+                <button
+                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
+                  onClick={() => setShowFullContent(!showFullContent)}
+                >
+                  View More
+                </button>
+
               </div>
             </div>
           </div>
 
-          {/* Right Column */}
-          <div className="w-full md:w-1/2 px-4">
-            <div className="text-right">
-              {showFullContent ? (
-                <div>
-                  <SectionTitle
-                    title="المقدمة"
-                    paragraph={truncatedContent}
-                    center
-                    mb="80px"
-                  />
-                  <SectionTitle
-                    title="كيفيه اختيار موضوع البحث"
-                    paragraph={researchContent.researchTopic.props.children}
-                    center
-                    mb="80px"
-                    sub
-                  />
-                  <SectionTitle
-                    title="ما هي الموجة؟"
-                    paragraph={researchContent.waveDefinition.props.children}
-                    center
-                    mb="80px"
-                    sub
-                  />
-                  <SectionTitle
-                    title="كيف تعمل الموجات الصوتية؟"
-                    paragraph={researchContent.soundWaves.props.children}
-                    center
-                    mb="80px"
-                    sub
-                    img="/img1.jpg"
-                    vid="/wavesdoc.mp4"
+          <ModalVideo
+            channel="custom"
+            autoplay={true}
+            start={true}
+            isOpen={isOpen}
+            url="/INTRO.mp4" // Replace with the path to your local video
+            onClose={() => setOpen(false)}
+          />
 
-                  />
-                  <SectionTitle
-                    title="أنواع الموجات الصوتية"
-                    paragraph={""}
-                    center
-                    mb="40px" />
-                  <SectionTitle
-                    title="الموجات الطولية"
-                    paragraph={researchContent.typesofWaves.longWave.props.children}
-                    center
-                    mb="80px"
-                    sub
-                    img="/img2.png"
-                  />
-                  <SectionTitle
-                    title="الموجات المستعرضة"
-                    paragraph={researchContent.typesofWaves.TransverseWaves.props.children}
-                    center
-                    mb="80px"
-                    sub
-                    img="/img3.jpg"
-                  />
-                  <SectionTitle
-                    title="سعة الموجة"
-                    paragraph={researchContent.waveAmp.props.children}
-                    center
-                    mb="80px"
-                    sub
-                  />
-                  <SectionTitle
-                    title="الطول الموجي"
-                    paragraph={researchContent.waveLength.props.children}
-                    center
-                    mb="80px"
-                    sub
-                  />
-                  <SectionTitle
-                    title="تردد الموجة"
-                    paragraph={researchContent.waveFreq.props.children}
-                    center
-                    mb="80px"
-                    sub
-                  />
-                  <SectionTitle
-                    title="سرعة انتشار الموجة الصوتيه"
-                    paragraph={researchContent.Propagationvelocity.props.children}
-                    center
-                    mb="80px"
-                    sub
-                    img="/img4.jpg"
-                  />
-                  <SectionTitle
-                    title={researchContent.categorizingSoundWaves.Title.t}
-                    paragraph={researchContent.categorizingSoundWaves.Title.sub.props.children}
-                    center
-                    mb="40px"
-                  />
-                  <SectionTitle
-                    title="الموجات المسموعة"
-                    paragraph={researchContent.categorizingSoundWaves.hearedWaves.props.children}
-                    center
-                    mb="40px"
-                    sub
-                  />
-                  <SectionTitle
-                    title="الموجات فوق السمعية"
-                    paragraph={researchContent.categorizingSoundWaves.overHearedWaves.props.children}
-                    center
-                    mb="40px"
-                    sub
-                  />
-                  <SectionTitle
-                    title="الموجات دون السمعية"
-                    paragraph={researchContent.categorizingSoundWaves.UnderHearedWaves.props.children}
-                    center
-                    mb="40px"
-                    sub
-                  />
-                  <SectionTitle
-                    title={researchContent.waveInterference.Title.t}
-                    paragraph={researchContent.waveInterference.Title.sub.props.children}
-                    center
-                    mb="40px"
-
-                  />
-                  <SectionTitle
-                    title={researchContent.waveInterference.constructive.Title.t}
-                    paragraph={researchContent.waveInterference.constructive.Title.sub.props.children}
-                    center
-                    mb="40px"
-                    sub
-                  />
-                  <SectionTitle
-                    title={researchContent.waveInterference.distructive.Title.t}
-                    paragraph={researchContent.waveInterference.distructive.Title.sub.props.children}
-                    center
-                    mb="40px"
-                    sub
-                  />
-                  <SectionTitle
-                    title={researchContent.tools.Title.t}
-                    paragraph={researchContent.tools.Title.sub.props.children}
-                    center
-                    mb="40px"
-                  />
-
-                  <SectionTitle
-                    title={researchContent.steps.Title.t}
-                    paragraph={researchContent.steps.Title.sub.props.children}
-                    center
-                    mb="40px"
-                  />
-                  <SectionTitle
-                    title={researchContent.results.Title.t}
-                    paragraph={researchContent.results.Title.sub.props.children}
-                    center
-                    mb="40px"
-                  />
-                  <SectionTitle
-                    title={researchContent.results.reasons.t}
-                    paragraph={researchContent.results.reasons.sub.props.children}
-                    center
-                    mb="40px"
-                    img="/img5.jpg"
-                  />
-                  <SectionTitle
-                    title={researchContent.notes.Title.t}
-                    paragraph={researchContent.notes.Title.sub.props.children}
-                    center
-                    mb="40px"
-                    img="/img6.jpg"
-                  />
-                  <SectionTitle
-                    title={researchContent.conclusioAndApply.Title.t}
-                    paragraph={researchContent.conclusioAndApply.subt1.t}
-                    center
-                    mb="40px"
-                    img="/img6.jpg"
-                  />
-                  <SectionTitle
-                    title={researchContent.conclusioAndApply.subt1.t}
-                    paragraph={researchContent.conclusioAndApply.subt1.sub.props.children}
-                    center
-                    mb="40px"
-                    sub
-                  />
-                  <SectionTitle
-                    title={researchContent.conclusioAndApply.subt2.t}
-                    paragraph={""}
-                    center
-                    mb="40px"
-                    sub
-                  />
-                  <SectionTitle
-                    title={researchContent.conclusioAndApply.subt3.t}
-                    paragraph={researchContent.conclusioAndApply.subt3.sub.props.children}
-                    center
-                    mb="40px"
-                    sub
-                  />
-                  <SectionTitle
-                    title={researchContent.conclusioAndApply.subt4.t}
-                    paragraph={researchContent.conclusioAndApply.subt4.sub.props.children}
-                    center
-                    mb="40px"
-                    sub
-                    img="/img7.jpg"
-                  />
-                  <SectionTitle
-                    title={researchContent.conclusioAndApply.subt5.t}
-                    paragraph={researchContent.conclusioAndApply.subt5.sub.props.children}
-                    center
-                    mb="40px"
-                    sub
-                  />
-                  <SectionTitle
-                    title={researchContent.conclusioAndApply.subt6.t}
-                    paragraph={researchContent.conclusioAndApply.subt6.sub.props.children}
-                    center
-                    mb="40px"
-                    sub
-                  />
-                  <SectionTitle
-                    title={researchContent.conclusioAndApply.subt7.t}
-                    paragraph={researchContent.conclusioAndApply.subt7.sub.props.children}
-                    center
-                    mb="40px"
-                    sub
-                  />
-                  <SectionTitle
-                    title={researchContent.conclusioAndApply.subt8.t}
-                    paragraph={researchContent.conclusioAndApply.subt8.sub.props.children}
-                    center
-                    mb="40px"
-                    sub
-                  />
-                  <SectionTitle
-                    title={researchContent.thanks.Title.t}
-                    paragraph={researchContent.thanks.Title.sub.props.children}
-                    center
-                    mb="40px"
-
-                  />
-                </div>
-              ) :
-                (
-                  <SectionTitle
-                    title="المقدمة"
-                    paragraph={truncatedContent}
-                    center
-                    mb="80px"
-                  />
-                )
-              }
-
-              <button
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
-                onClick={() => setShowFullContent(!showFullContent)}
-              >
-                View More
-              </button>
-
-            </div>
-          </div>
-        </div>
-
-        <ModalVideo
-          channel="custom"
-          autoplay={true}
-          start={true}
-          isOpen={isOpen}
-          url="/INTRO.mp4" // Replace with the path to your local video
-          onClose={() => setOpen(false)}
-        />
-
-        <div className="absolute bottom-0 left-0 right-0 z-[-1] h-full w-full bg-[url(/images/video/shape.svg)] bg-cover bg-center bg-no-repeat"></div>
-      </section>
-    </motion.div>
+          <div className="absolute bottom-0 left-0 right-0 z-[-1] h-full w-full bg-[url(/images/video/shape.svg)] bg-cover bg-center bg-no-repeat"></div>
+        </section>
+      </motion.div>
     </AnimatePresence>
 
   );

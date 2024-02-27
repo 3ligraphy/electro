@@ -5,7 +5,7 @@ import featuresData from "./featuresData";
 import { motion, useInView, useScroll } from "framer-motion";
 import Image from "next/image";
 import { useRef, useState } from "react";
-import InterferenceApp from "./InterferenceApp"
+import DemoPage from "./InterferenceApp"
 import ModalVideo from "react-modal-video";
 
 // ... (previous imports)
@@ -44,7 +44,7 @@ const Features = () => {
             <motion.div>
               <SectionTitle
                 title="تطبيق الذكاء الاصطناعي"
-                paragraph="مرحبا بكم في مستكشف الموجات. يمكنكم من استكشاف نوع التداخل ما بين موجتين عن طريق ادخال خصائص كلتا هاتين الموجتين"
+                paragraph="يمكنك من خلال هذا التطبيق حساب مدى احتياج منزلك الى الالواح الشمسية"
                 center
               />
             </motion.div>
@@ -62,9 +62,8 @@ const Features = () => {
                 transition={{ delay: 0.5, duration: 0.5 }}
               >
                 <div>
-                  <section className="relative z-10 py-16 md:py-20 lg:py-28">
+                  {/* <section className="relative z-10 py-16 md:py-20 lg:py-28">
                     <div className="container flex flex-wrap items-center">
-                      {/* Left Column */}
                       <div className="w-full  px-4 mb-4 md:mb-0">
                         <div
                           className="mx-auto max-w-[770px] overflow-hidden rounded-md relative"
@@ -96,7 +95,7 @@ const Features = () => {
                         </div>
                       </div>
                     </div>
-                  </section>
+                  </section> */}
 
 
                   <div className="flex justify-center items-center">
@@ -110,7 +109,7 @@ const Features = () => {
                     />
                   </div>
                 </div>
-                <InterferenceApp />
+                <DemoPage />
               </motion.div>
             </motion.div>
           </div>

@@ -12,7 +12,7 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 import {motion} from "framer-motion"
 export const metadata: Metadata = {
-  title: "تداخل الموجات",
+  title: "كهرباء المستقبل النظيفة",
   description: "",
   // other metadata
 };

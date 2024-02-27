@@ -41,20 +41,18 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header left-0 top-0 z-40 flex w-full items-center ${
-          sticky
-            ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
+        className={`header left-0 top-0 z-40 flex w-full items-center ${sticky
+            ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] bg-black !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
             : "absolute bg-transparent"
-        }`}
+          }`}
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between ">
             <div className="w-60 max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
-                className={`header-logo block w-full ${
-                  sticky ? "py-5 lg:py-2" : "py-8"
-                } `}
+                className={`header-logo block w-full ${sticky ? "py-5 lg:py-2" : "py-8"
+                  } `}
               >
                 {/* <Image
                   src="/images/logo/logo-2.svg"
@@ -70,7 +68,10 @@ const Header = () => {
                   height={30}
                   className="hidden w-full dark:block"
                 /> */}
-                <h1 className="text-bold">تداخل الموجات</h1>
+                <div className="flex items-center space-x-4 ">
+                  <Image src={'/logo.jpeg'} width={60} height={30} alt="logo" className="rounded-full"/>
+                  <h1 className="text-bold text-white">ثانوية العصماء بنت الحارث</h1>
+                </div>
               </Link>
             </div>
             {/* <div className="flex w-full items-center justify-between px-4">
@@ -174,9 +175,9 @@ const Header = () => {
                 </Link>
                 </div>
               </div> */}
-              <div>
+            {/* <div>
                 <ThemeToggler />
-              </div>
+              </div> */}
           </div>
         </div>
       </header>

@@ -11,7 +11,7 @@ const SectionTitle = ({
   sub,
   vid,
   img,
-
+  white
 }: {
   title: string;
   paragraph: React.ReactNode;
@@ -21,6 +21,7 @@ const SectionTitle = ({
   sub?: boolean;
   img?: string;
   vid?: string;
+  white?: boolean;
 },
 
 ) => {
@@ -44,7 +45,7 @@ const SectionTitle = ({
             {title}
           </h2>
         )}
-        <p className="text-base !leading-relaxed text-body-color md:text-lg dark:text-white">
+        <p className={`text-base !leading-relaxed ${white ? 'text-white' : 'text-body-color'} md:text-lg dark:text-white`}>
           {paragraph}
         </p>
         {img && (
@@ -75,9 +76,9 @@ const SectionTitle = ({
                   src="/coverWavesDoc.jpg"
                   alt="video image"
                   layout="fill"
-                  objectFit="contain" 
+                  objectFit="contain"
                 />
-                <div className  ="absolute right-0 top-0 flex h-full w-full items-center justify-center">
+                <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">
                   <button
                     aria-label="video play button"
                     onClick={() => setOpen(true)}
