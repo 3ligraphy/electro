@@ -3,15 +3,25 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import SectionTitle from "../Common/SectionTitle";
-
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
+  const [isAudioPlaying, setIsAudioPlaying] = useState(false); // Track audio playing state
 
   const handleScroll = () => {
     setScrollY(window.scrollY);
   };
 
+  const handleButtonClick = (audioFile) => {
+    const audio = new Audio(`${audioFile}.mp3`);
 
+    if (isAudioPlaying) {
+      audio.pause(); // Pause the audio if it's playing
+    } else {
+      audio.play(); // Play the audio if it's paused
+    }
+
+    setIsAudioPlaying(!isAudioPlaying); // Toggle the audio playing state
+  };
   const summary={
     para:(<p>
       هناك مشكلة يمكن أن تواجهنا فى المستقبل وهى إنتهاء الكهرباء من العالم ، وذلك بسبب أن محطات توليد الكهرباء تعمل بالوقود ( النفط ) وهو طاقة غير متجددة وغير نظيفة ، ولكى نحل هذه المشكلة لابد من استخدام طاقة نظيفة ومتجددة مثل طاقة الشمس لتوليد الكهرباء وهذا مايعرف ب(الخلايا الشمسية ).والأساس العلمى لذلك هى ظاهرة فيزيائية تحدث تسمى ( ظاهرة التأثير الكهروضوئى ).
@@ -20,10 +30,7 @@ const Hero = () => {
 
     </p>)
   }
-  const handleButtonClick = (audioFile) => {
-    const audio = new Audio(`${audioFile}.mp3`);
-    audio.play();
-  };
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
@@ -96,13 +103,19 @@ const Hero = () => {
                           className="bg-gray-700 bg-opacity-75 rounded-md p-2 text-white text-center mb-2  hover:bg-gray-800 transition duration-300 flex items-center justify-center"
                         >
                           
-                          <p className="text-md font-semibold">شيخة البرجس </p>
+                          <p className="text-md font-semibold"> شيخة محمد أحمد البرجس ١١ع٢</p>
                         </div>
                         <div
                           className="bg-gray-700 bg-opacity-75 rounded-md p-2 text-white text-center mb-2  hover:bg-gray-800 transition duration-300 flex items-center justify-center"
                         >
                           
-                          <p className="text-md font-semibold">زينة الفهد </p>
+                          <p className="text-md font-semibold"> رفاع نواف الرشيدى ١٢ع٥</p>
+                        </div>
+                        <div
+                          className="bg-gray-700 bg-opacity-75 rounded-md p-2 text-white text-center mb-2  hover:bg-gray-800 transition duration-300 flex items-center justify-center"
+                        >
+                          
+                          <p className="text-md font-semibold">شيخة محمد أحمد البرجس ١١ع١</p>
                         </div>
 
                       </div>
@@ -150,12 +163,14 @@ const Hero = () => {
                         <p className="text-md font-bold">مديرة المدرسة </p>
                       </div>
                     </div> */}
-                    <SectionTitle
-                      title=""
-                      paragraph={summary.para.props.children}
-                      center
-                      mb="40px"
-                      white />
+                    <div onClick={() => handleButtonClick("MOLA5AS")} className='cursor-pointer'>
+                      <SectionTitle
+                        title=""
+                        paragraph={summary.para.props.children}
+                        center
+                        mb="40px"
+                        white />
+                    </div>
 
                   </div>
 

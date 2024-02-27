@@ -458,12 +458,19 @@ const Video = () => {
                       mb="40px"
                       sub />
                     <SectionTitle
+                      title=""
+                      paragraph={''}
+                      center
+                      mb="40px"
+                      img="/qrs.png"
+                      sub />
+                    <SectionTitle
                       title="الخرائط الذهنية"
                       paragraph={""}
                       center
-                      mb="40px" 
-                      img="/map.png"/>
-                   
+                      mb="40px"
+                      img="/map.png" />
+
                   </div>
                 ) :
                   (
