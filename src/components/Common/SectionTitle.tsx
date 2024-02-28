@@ -73,7 +73,7 @@ const SectionTitle = ({
               <div className="aspect-w-16 aspect-h-9">
                 {/* Replace Image component with next/image */}
                 <Image
-                  src="/coverWavesDoc.jpg"
+                  src="/cover.png"
                   alt="video image"
                   layout="fill"
                   objectFit="contain"

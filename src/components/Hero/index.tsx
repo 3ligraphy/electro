@@ -115,7 +115,7 @@ const Hero = () => {
                           className="bg-gray-700 bg-opacity-75 rounded-md p-2 text-white text-center mb-2  hover:bg-gray-800 transition duration-300 flex items-center justify-center"
                         >
                           
-                          <p className="text-md font-semibold">شيخة محمد أحمد البرجس ١١ع١</p>
+                          <p className="text-md font-semibold">زينة فهد عبدالرزاق الفهد ١١ع١</p>
                         </div>
 
                       </div>

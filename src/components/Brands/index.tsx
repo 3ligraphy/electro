@@ -1,6 +1,7 @@
 import { Brand } from "@/types/brand";
 import Image from "next/image";
 import brandsData from "./brandsData";
+import SectionTitle from "../Common/SectionTitle";
 
 const Brands = () => {
   return (
@@ -9,9 +10,13 @@ const Brands = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div className="flex flex-wrap items-center justify-center rounded-sm bg-gray-light px-8 py-8 dark:bg-gray-dark sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px]">
-              {brandsData.map((brand) => (
-                <SingleBrand key={brand.id} brand={brand} />
-              ))}
+            <SectionTitle
+                      title="النتائج QR كود"
+                      paragraph={""}
+                      center
+                      mb="80px"
+                      img="/resultsqrelectro.png"
+                    />
             </div>
           </div>
         </div>

@@ -62,6 +62,7 @@ const Features = () => {
                 transition={{ delay: 0.5, duration: 0.5 }}
               >
                 <div>
+           
                   {/* <section className="relative z-10 py-16 md:py-20 lg:py-28">
                     <div className="container flex flex-wrap items-center">
                       <div className="w-full  px-4 mb-4 md:mb-0">
@@ -110,6 +111,14 @@ const Features = () => {
                   </div>
                 </div>
                 <DemoPage />
+                <br/> <br/> <br/> <br/>
+                <SectionTitle
+                      title="فيديو اجراء التجربة"
+                      paragraph={""}
+                      center
+                      mb="80px"
+                     vid="/experiment.mp4"
+                    />
               </motion.div>
             </motion.div>
           </div>
