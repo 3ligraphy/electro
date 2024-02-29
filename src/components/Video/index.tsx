@@ -473,7 +473,7 @@ const Video = () => {
                 ) :
                   (
                     <SectionTitle
-                      title="المقدمة"
+                      title="المحتوى العلمي"
                       paragraph={truncatedContent}
                       center
                       mb="80px"
