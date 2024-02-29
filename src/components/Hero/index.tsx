@@ -6,21 +6,21 @@ import SectionTitle from "../Common/SectionTitle";
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
   const [isAudioPlaying, setIsAudioPlaying] = useState(false); // Track audio playing state
+  const audio = new Audio(`MOLA5AS.mp3`);
 
   const handleScroll = () => {
     setScrollY(window.scrollY);
   };
 
-  const handleButtonClick = (audioFile) => {
-    const audio = new Audio(`${audioFile}.mp3`);
+  const handleButtonClick = () => {
 
     if (isAudioPlaying) {
       audio.pause(); // Pause the audio if it's playing
     } else {
       audio.play(); // Play the audio if it's paused
     }
-
     setIsAudioPlaying(!isAudioPlaying); // Toggle the audio playing state
+
   };
   const summary={
     para:(<p>
@@ -163,7 +163,7 @@ const Hero = () => {
                         <p className="text-md font-bold">مديرة المدرسة </p>
                       </div>
                     </div> */}
-                    <div onClick={() => handleButtonClick("MOLA5AS")} className='cursor-pointer'>
+                    <div onClick={() => handleButtonClick()} className='cursor-pointer'>
                       <SectionTitle
                         title=""
                         paragraph={summary.para.props.children}
